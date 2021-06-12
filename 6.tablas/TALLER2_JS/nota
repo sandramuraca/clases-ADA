@@ -1,0 +1,17 @@
+FUNCION
+Fragmento de codigo que realiza una tarea
+
+
+EJERCICIO TIENDA
+Se tienen 3 productos a la venta con su precio, se necesita que el usuario vea el precio con impuesto en consola
+el impuesto es de un 20%
+*/
+/*
+Por razones desconocidas el impuesto subio a 30%.Actualizar el codigo para un mejor funcionamiento
+*/
+/*
+Se viene un hotsale hay que ademas de los impuesto agregar un descuento del 10%
+*/
+/*
+El cliente 80% de los clientes no ven los precios por la consola,ahora tambien se tiene que ver por un alert
+*/

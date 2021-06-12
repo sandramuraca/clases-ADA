@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fuente{
+    font-size: 24px;
+}
+
+li{
+    font-size: 1em;
+}
+
+h1{
+    font-size: 2em;
+}
+.tamanio {
+    width: 500px;
+    height: 300px;
+}
+.caja{
+    background-color: aqua;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .caja{
+        background-color: blueviolet;
+    }   
+}
+@media screen and (max-width: 576px){
+    .caja{
+        background-color: green;
+        width: 100%;
+    }   
+}
+.container{
+    display: flex;
+    flex-direction: row;    
+}
+
+.rojo{
+    border: 1px solid black;
+    background-color: red;
+}
+
+.verde{
+    border: 1px solid black;
+    background-color: green;
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        display: flex;
+        flex-direction: column;    
+    
+    }
+}
+

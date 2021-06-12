@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*justify-content acepta: 
+        flex-start
+        center
+        flex-end
+    mueve el elemento por la linea principal
+    por defecto flex-direction es row
+    para que mueva en forma vertical hay
+    que poner flex-direcrion: colum    
+    */
+
+.conteiner{
+    display: flex;
+    justify-content: space-evenly ;
+    background-color: pink;
+    height: 500px;
+    flex-direction: row ;
+    /*desplaza por la linea secundaria, acepta:
+    flex-start
+    center
+    flex-end */
+    align-items: center;
+}
+/* space-betwen: maximo espacio posible entre los elementos
+    space-around: genera una separacion entre los elementos
+    del doble del espacio que hay hacia los costados
+    space-evenly: identico espacio en todos los margenes */
+
+    .caja-flexible{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    font-size: 40px;
+    border: solid blue 2px;
+    text-align: center;
+}
+ 

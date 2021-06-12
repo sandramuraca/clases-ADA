@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.cajasalmon{
+    background-color: coral;
+    width: 1000px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.rectangulofucsia{
+    position: relative;
+    top: 120px;
+    left: 50px;
+    background-color: crimson;
+    width: 200px;
+    height: 50px;
+}
+.circuloaqua{
+    position: relative;
+    left: 270px;
+    top: -40px;
+    background-color: aqua;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.rectanguloamarillo{
+    position: relative;
+    top: -120px;
+    left: 500px;
+    background-color:yellow;
+    width: 30px;
+    height: 160px;
+}
+.rectanguloazul{
+    position: relative;
+    top: -250px;
+    left: 650px;
+    background-color: blue;
+    width: 125px;
+    height: 75px;
+}
+
+.container{
+    margin-top: 100px;
+    background-color: yellowgreen;
+    width: 800px;
+    height: 800px;
+}
+.caja1{
+    background-color:orange;
+    width: 500px;
+    height: 500px;
+}
+.caja2{
+    background-color: violet;
+    width: 300px;
+    height: 300px;
+}
+.caja3{
+    background-color:grey;
+    width: 100px;
+    height: 100px;
+}
+

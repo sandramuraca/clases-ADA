@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.caja{
+    width: 75px;
+    height: 75px;
+    background-color: aquamarine;
+    margin-left: 150px;
+    margin-top: 150px;
+    transition: 2s;
+}
+
+.caja:hover{
+    transform: scale(2) rotate(45deg);
+}
+    

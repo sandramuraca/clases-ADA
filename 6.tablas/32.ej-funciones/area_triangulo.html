@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let base = Number(prompt("indique la medida de la base del triangulo"));
+        let altura = Number(prompt("indique la medida de la altura del triangulo"));
+        
+        let resAreaTriangulo = area (base, altura);
+
+        function area(num1, num2){
+            resultado = (num1 * num2)/2;
+            return resultado;
+
+        }
+
+        console.log(`El area del triangulo es ${resAreaTriangulo}`);
+
+    </script>
+</body>
+</html>

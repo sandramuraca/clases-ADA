@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>BIENVENIDO A DOM</h1>
+
+    <h1>Otro titulo</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam iste minima magni. Omnis odio, consequuntur inventore laudantium commodi, alias dolores veritatis quod deleniti neque ad iste, dolorum earum quas? Iure!</p>
+
+    <h1 id="idInicio" class="rojo center">Inicio</h1>
+    <h1 id="idMedio" class="rojo center">Medio</h1>
+    <h1 id="idFin" class="rojo center">Fin</h1>
+
+    <script>
+        const titulo = document.querySelector("h1");
+        const parrafo = document.querySelector("p");
+
+       titulo.textContent = "Nuevo titulo"
+        parrafo.textContent = "nuevo texto luego de aplicar un metodo";
+
+        console.log (titulo); // es igual a la linea 17
+        console.log (parrafo); // es igual a la linea 18
+
+       ///seleccionar un elemto mediante id
+       const idSeleccionado = document.getElementById("idMedio");
+
+       idSeleccionado.innerHTML = "Este es el elegido";
+
+       //quito clase
+       idSeleccionado.classList.remove("rojo");
+
+       //agrego otra clase
+
+       idSeleccionado.classList.add("verde");
+
+     
+
+    </script>
+
+</body>
+</html>

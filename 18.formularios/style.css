@@ -1,0 +1,51 @@
+
+input[type=text]{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+input[type=number]{
+    background-color: black;
+    color: white;
+}
+
+input[type=mail]{
+    background-color: black;
+    color: white;
+}
+
+input[type=mail]:valid{
+    background-color:green;
+    color: white;
+}
+
+input[type=text]:focus{
+    background-color: green;
+       
+}
+
+a:active{
+    background-color: indigo;
+}
+
+a:visited{
+    background-color: lawngreen;
+}
+
+a:link{
+    background-color: lightseagreen;
+}
+
+input[type=checkbox]:checked{
+    box-shadow: 1px 1px 1px black ;
+}
+
+/*ver esto que paso genesis*/
+input[type=email]:invalid:required{
+    background-color:red;
+}
+  
+input[type=email]:valid{
+    border: 2px solid black;
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Transition*/
+.rojo{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 5s;
+}
+
+.rojo:hover{
+    background-color: rgb(204, 192, 192);
+    width: 400px;
+}
+
+.amarillo{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: 5s linear;
+}
+
+.amarillo:hover{
+    background-color: rgb(204, 192, 192);
+    width: 400px;
+}
+
+/*transform*/
+.verde{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: 2s;
+}
+
+.verde:hover{
+    transform: translate(15px, 30px);
+}
+
+
+/* Transition:
+linear: mueve la animacion de forma constante
+la forma por defecto es "ease in" empieza rapido 
+y se va frenando cuando llega al final
+
+Transform:
+Los elementos ignoran la transformacion todos mantienen
+su posicion, salvo aquel al que se le aplica la transformacion*/

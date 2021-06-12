@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    background-color: burlywood;
+    height: 450px;
+    
+    /*la cantidad de auto determina la cantidad de columnas*/
+    grid-template-columns: auto auto auto auto;
+    
+    /*determina la cantidad de filas y la altura
+    de las filas*/
+    grid-template-rows: 50px 50px 50px;
+
+    /* separacion o espacio entre columnas*/
+    column-gap: 20px ;
+
+    /*idem entre filas*/
+    row-gap: 20px ;
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9 {
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+}
+
+

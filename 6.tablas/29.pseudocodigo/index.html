@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+</head>
+<body>
+
+    <script>
+        /*
+        Algoritmo: buscar una solucion a un problema por medio de una secuencia de pasos. 
+        Es una METODOLOGIA para resolver un problema.
+        Secuencia de pasos ordenados
+        Caracteristicas 
+        -Definidos
+        -Preciso
+        -Finito
+        */
+
+    
+        /*var receta = prompt("Busque la receta que va a realizar");
+        buscar(receta);
+
+        var ingredientes = "harina, leche, huevo, azucar";
+        mezclar (ingredientes);
+
+        var molde = prompt("Indique el molde en el que va a cocinar la torta");
+        enharinar (molde);
+
+        var artefacto_de_cocina = prompt("Indique donde va a cocinar la torta");
+        encender (artefacto_de_cocina);*/
+        
+
+        /*Problema: obtener area del triangulo
+        Area = (base*altura)/2
+
+        esto es pseudocodigo ---->no se ve en el console
+
+        */
+        var base = prompt("ingrese la base del triangulo:");
+        var altura = prompt("ingrese la altura del triangulo");
+        var area = (`base`*`altura`)/2;
+
+        /*
+        Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo, pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron. Realizá el diagrama de flujo y pseudocódigo que representen el algoritmo para solucionar este problema.
+
+        esto es pseudocodigo ---->no se ve en el console
+        */
+
+        var anioDeNaciminto = prompt("ingrese su año de nacimiento");
+        var anioActual = 2021;
+        var edadActual = (anioDeNaciminto-anioActual);
+        alert(`La edad del empleado es ${edadActual}`);
+
+        /*Realizá un diagrama de flujo y pseudocódigo que representen el algoritmo para determinar cuánto pagará finalmente una persona por un artículo, considerando que tiene un descuento de 20%, y debe pagar 15% de IVA (debe mostrar el precio con descuento y el precio final).
+    */
+
+        var valorArticulo = promp("ingrese el valor del articulo:");
+        var descuento20 = 0.8;
+        var articuloConDescuento = (valorArticulo*descuento20);
+        var precioFinal = (articuloConDescuento*1.15);
+        alert (`el precio final del producto es ${precioFinal}`);
+        alert (`el precio con descuentodel producto es ${articuloConDescuento}`);
+
+
+
+
+       
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

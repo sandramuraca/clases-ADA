@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <h1>FORMULARIOS</h1>
+
+        <h2>Etiquetas</h2>
+
+        <form action="">
+            <label for="id-nombre">Nombre</label>
+            <input id="id-nombre" name="nombre"
+            type="text" placeholder="ingresa tu nombre">
+            <br>
+
+            <label for="id-apellido">Apellido</label>
+            <input id="id-apellido" name="apellido"
+            type="text" placeholder="ingresa tu apellido">
+            <br>
+
+            <label for="mail">Em@il:</label>
+            <input type="email" name="mail" id="mail">
+            <br>
+
+            <label for="pass">Contraseña</label>
+            <input id="pass"  type="password" name="pass">
+            <br>
+
+            <label for="">Edad</label>
+            <input type="number" name="edad" id="edad"  min="18" max="99" value="18">
+            <br>
+
+            <label for="">Hora</label>
+            <input type="datetime" name="time" id="time" value="20:36">
+
+            <label for="date">Fecha</label>
+            <input type="date" name="date" id="date" value="11/01/2021">
+            <br>
+            <br>
+
+            <hr>
+            <br>
+
+            <h3>Comidas Norteñas</h3>
+            <input type="checkbox" value="empanada" name="norte" id="empanada"><label for="empanada">Empanada</label>
+            <br>
+            <input type="checkbox" value="humita" name="norte" id="humita"> <label for="humita">Humita</label>
+            <br>
+            <input type="checkbox" value="chivo" name="norte" id="chivo"> <label for="chivo">Chivo</label>
+            <br>
+            <input type="checkbox" value="tamales" name="norte" id="tamales"> <label for="tamales">Tamales</label>
+            <br>
+            <input type="checkbox" value="cordero-patagomico" name="cordero" id="cordero"><label for="cordero">Cordero Patagonico</label>
+            <br>
+            <br>
+
+            <hr>
+            <br>
+
+            <h3>Pasatiempo</h3>
+            <input type="radio" name="pasatiempo" id="musica" value="musica"> <label for="musica">Música</label>
+            <input type="radio" name="pasatiempo" id="internet" value="internet"> <label for="internet">Internet</label>
+            <input type="radio" name="pasatiempo" id="cine" value="cine"><label for="cine">Cine</label>   
+            
+            <br>
+            <br>
+
+            <h3>Autos</h3>
+            <select name="autos" id="autos">
+                <option value="volvo">Volvo</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="ford">Ford</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="comentarios">Comentarios</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+
+
+            
+        </form>
+    </body>
+</html>

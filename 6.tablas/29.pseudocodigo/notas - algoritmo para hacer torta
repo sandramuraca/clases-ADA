@@ -1,0 +1,22 @@
+Generar algoritmo para cocinar una torta
+
+1) pensar en lenguaje cologial
+2) extraer el verbo y si tiene (agregar el parametro)
+ej: cocina (horno)
+3) si existe un parametro extraerlo y pedirlo al usuario // prompt
+
+
+Pasos:
+1) Buscar la receta
+2)buscar los ingredientes
+3)mezclar los ingredientes
+4)buscar el molde
+5)enharinar el molde
+6)prender el horno
+7)preparar la masa
+8)volcar la masa en el molde
+9)meter el molde con la masa en el horno
+10)esperar 30 minutos
+11)verificar si esta cocida
+12)sacar del horno
+

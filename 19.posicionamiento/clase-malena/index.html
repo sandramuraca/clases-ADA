@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--posicionamiento se usa en cosas muy puntuales, especificamente cuando queremos superponer cosas-------->
+
+    <!-------- FIXED-------->
+    
+    <div class="nav">Fixed: posisiona desde su posicion de origen y queda fija, escapa al flujo habitual de los elementos, los otros elemtos lo ignoran, al elemento que lo sigue se le da un margin del mismo heigth que tiene el Nav </div>
+
+    <!-------- RELATIVE-------->
+    <div class="caja1">
+        <h2 class="titulo">Position Relative</h2>
+        <p>El elemento se mueve SIEMPRE A PARTIR DE SU POSICION ORIGINAL
+            acepta las siguientes instrucciones:</p>
+        <ul>
+            <li>Top: desde arriba</li>
+            <li>Bottom: desde abajo</li>
+            <li>Left: desde la izquierda</li>
+            <li>Right: desde la derecha</li>
+        </ul>  
+        <p> <em>Ejemplo:</em> </p>  
+        <article>
+            <div class="contenedor">
+                <div class="rojo"></div>
+                <div class="naranja">left: 300px, desde su posicion --></div>
+                <div class="amarillo"></div>
+            </div>
+        </article>
+    </div>
+
+<article>
+        
+    <p>Position ABSOLUTE, toma como referencia al BODY, SALVO QUE SU CONTENEDOR TENGA POSICION RELATIVE
+    </p>
+    <p> <em>Ejemplo:</em> </p> 
+    <div class="contenedor2">
+        <main class="main">
+            <div class="tarjeta">
+                <div class="blanco">left: 20px; 20px desde la izquieta de tarjeta</div>
+            </div>
+            <div class="tarjeta2">
+                <div class="pink">absolute - right: 15px - de mueve desde la derecha de tarjeta, porque tarjeta2 tiene position relative</div>
+            </div>
+            <div class="tarjeta"></div>
+        </main>
+    </div>
+</article>
+
+<!-----ABSOLUTE-------->
+<h2>Position Absolute</h2>
+    <p>El posicionado escapa al flujo normal de los elementos, los elementos no mantienen la posisicon inicial, ocupan la posicion del posicionado....
+        usa como referencia para posicionar el BODY*
+        acepta las siguientes instrucciones:</p>
+    
+    <p> <em>Ejemplo:</em> </p> 
+
+    <ul>
+        <li>Top: desde arriba</li>
+        <li>Bottom: desde abajo</li>
+        <li>Left: desde la izquierda</li>
+        <li>Right: desde la derecha</li>
+    </ul>    
+<article>
+    <div class="contenedor">
+        <div class="verde"></div>
+        <div class="violeta">left: 500px; se mueve desde la izquierda del body</div>
+        <div class="negro"></div>
+    </div>
+</article>
+
+</body>
+</html>

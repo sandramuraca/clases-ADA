@@ -1,0 +1,90 @@
+Listas ordenadas (order list) <ol>
+el orden de los items tiene importancia
+con el "type" se elije que tipo de item
+tiene adelante cada registro de la Listas
+Por ejemplo:
+ <ol type="A"> se ve asi:
+ A. Item 1
+ B. Item 2
+ C. Item 3
+
+ Si no se elige type por defecto son números
+
+
+ Listas desordenadas (unorder list) <ul>
+
+ los item tienen bulets
+
+ ANCLAS <a> 
+ Te linquea hacia la pagina donde queres direccionar
+ si se agregar el atributo <target> abre el hipervinculo
+ en otra ventana
+
+
+
+CODIGO COMPLETO PASADO POR PROFESOR:
+ <h2>Menu</h2>
+
+    <ol>
+        <li><a href="#ordenadas"> Listas Ordenadas</a></li>
+        <li>Listas Desordenadas</li>
+        <li>Hipervínculos</li>
+    </ol>
+
+
+
+    <a name="ordenadas">
+    <h3>Listas Ordenadas</h3>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ol type="A">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ol type="a">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <h3>Listas Desordenas</h3>
+    <h5>Frutas</h5>
+
+    <ul>
+        <li>Banana</li>
+        <li>Sandia</li>
+        <li>Pera</li>
+    </ul>
+
+    <h3>Anclas e hipervínculos</h3>
+
+    <a href="https://google.com"
+        target="blank">
+        Visitar página
+    </a>
+
+    <br>
+    <a href="mailto:fernandomatiasdv@gmail.com">
+        Enviar mail
+    </a>
+
+    MATERIAL DE CONSULTA
+    https://www.htmlquick.com/es/reference/tags.html
+    https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf
+
+
+

@@ -1,0 +1,36 @@
+Juan quiere  comprar huevos. Cad uno vale $3
+Hacer algoritmo que le informe a Juan cuando gastaria en funcion de cuanto compre.
+
+1 huevo cuesta $3
+Juan compra 12 huevos
+Juan paga lo que corresponda
+
+valorHuevo (3)
+cantidad (12)
+paga (valorHuevo * cantidad)
+costoTotal = valorHuevo * cantidad
+
+console.log(costoTotal)
+---------------------------------------
+costo (valorHuevo)
+compra (cantidad)
+paga(costoTotal)
+
+---------------------------------------
+
+CONDICIONALES
+
+Sos mayor de edad?
+Si tenes mas de 18 años sos mayot
+Sino sos menor
+
+Tenes fiebre?
+Si tenes mas de 37 grados -->Si
+Si tenes menos de 36.9 grados -->no
+
+voy al almacen?
+Si
+compro: jamon, queso, pan mayoneda - hago el sandwich
+
+no
+no como

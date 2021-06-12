@@ -1,0 +1,60 @@
+1) Hacer una función "restar" en donde le pasaremos dos parámetros y nos 
+devolverá el resultado. Mostralo por console.log.
+
+2) Hacer una función "area_triangulo" en donde le pasaremos dos parámetros:
+base y altura. La función devolverá el resultado y se mostrará por consola.
+
+3) Hacer la función "comparar_numeros" en donde le pasarás dos números.
+Si son iguales devolvé 1, si son diferentes -1.
+
+4) Hacer la función "es_mayor" en donde le pasarás una edad. 
+Devolvé 1 si es mayor de 18 y -1 si es menor.
+
+5) Hacer la función "dia_de_la_semana" en donde debés pasarle un número
+del 1 al 7 y éste debe retornar el día de la semana. Por ej. Si le pasaste
+un 1 te devuelve "Lunes"; 2, "Martes"... 7, "domingo"
+
+6) Hacer una función "menor_que" en donde se pasen dos parámetros:
+Si el primero es menor al segundo retorná 1, si es menor o igual retorná -1
+
+7) Hacé una función "valor_contenido" en donde le pasarás 3 parámetros.
+Si el tercero se encuentra entre el primero y el segundo entonces retorná 1
+Si el segundo valor es menor al primero retorná -1
+Y si el tercero está por fuera de los limites retorná 0.
+NOTA: Usá la función que creaste en el punto 5
+
+EJERCICIO GRUPAL PARA EL MIERCOLES
+Cajero Automático (Grupal)
+-----------------
+
+Login:
+Pedir un usuario y contraseña. Ésta será: 
+usuario: admin
+contraseña: 123456
+
+Para ingresar a la pantalla harás una función que retorné 
+Si lo ingresó correctamente: Bienvenida Admin.
+Si no lo ingresó correctamente: Usuario o contraseña incorrecta.
+NOTA: Igualmente, hayan o no ingresado bien (ya que aún no sabes como "cancelar un proceso")
+
+Una vez que ingresas accederás a un menú, si la persona ingresa:
+(1) Podrá ingresar dinero.
+(2) Podrá retirar dinero.
+(3) Verificar el monto en cuenta.
+
+En caso de elegir 1:
+El sistema mostrará en un prompt "¿A qué cuenta desea ingresarlo?". Las cuentas serán:
+567, que posee $10000.
+789, que posee $5000.
+Una vez seleccionada la cuenta el sistema mostrará en un prompt "Monto a ingresar" y el usuario lo ingresará.
+Luego sumará el valor ingresado a la cuenta seleccionada.
+Finalmente mostrará por alert "La cuenta {numero_de_cuenta} posee {valor_actualizado}"
+En caso de elegir 3:
+El sistema mostrará en un prompt "¿Qué cuenta desea verificar?". Las cuentas serán:
+567, que posee $10000.
+789, que posee $5000.
+Una vez seleccionada la cuenta un alert mostrará "La cuenta {numero_de_cuenta} posee {monto}"
+
+
+
+

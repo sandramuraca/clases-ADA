@@ -1,0 +1,138 @@
+
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+.nav{
+    background-color: aqua;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.caja1{
+        padding-top: 80px;
+}
+.contenedor{
+    background-color: #cacaca;
+}
+
+.rojo{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.naranja{
+    background-color: orange;
+    position: relative;
+    left: 300px;
+    width: 100px;
+    height: 100px;
+}
+.amarillo{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+.verde{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+.violeta{
+    background-color: violet;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 500px;
+}
+.negro{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor2{
+    margin-top: 10px;
+    background-color: darkblue;
+    padding: 40px;
+}
+.main{
+    background-color: lightblue;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta{
+height: 300px;
+width: 200px;
+margin: 10px;
+border: 1px solid black;
+}
+
+.tarjeta2{
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    position: relative;
+    top: 20px;
+    }
+
+.blanco{
+    background-color:whitesmoke;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    left: 20px;  
+}
+.pink{
+    background-color: pink;
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+    position: absolute;
+    right: 15px;
+}
+
+/* RELATIVE
+El elemento se mueve SIEMPRE A PARTIR DE SU POSICION ORIGINAL
+position:relative; --> el elemento esta preparado para recibir otras ordenes
+acepta las siguientes instrucciones:
+1 - top
+2 - bottom
+3 - left
+4 - right
+Estas intrucciones me permiten mover el elemento como quiera, los demas elementos mantienen la posicion que tenia con ese elemento dentro del contenedor, no cambia el flujo normal de los elementos, los elementos reservan su espacio.
+Usa como referencia para posicionarse su posicion de origen.
+
+ABSOLUTE
+position: absolute;
+El posicionado escapa al flujo normal de los elementos, los elementos no mantienen la posisicon inicial, ocupan la posicion del posicionado....
+usa como referencia para posicionar el BODY*
+*Si se mueve en el eje horizontal solamente, mantiene su posicion si es que no le doy top o bottom
+* viveversa si se le da la orden en el eje vertical
+*generalmente si dan las 2 instrucciones juntas
+* toma como referencia al BODY, SALVO QUE SU CONTENEDOR TENGA POSICION RELATIVE
+
+
+acepta las siguientes instrucciones:
+1 - top
+2 - bottom
+3 - left
+4 - right
+
+FIXED:
+
+
+*/

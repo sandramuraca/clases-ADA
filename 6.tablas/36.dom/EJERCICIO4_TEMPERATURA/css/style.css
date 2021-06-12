@@ -1,0 +1,33 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.blue{
+    color: blue;
+}
+
+.lightblue{
+    color: cadetblue;
+}
+
+.green{
+    color: green;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.orange{
+    color:orange;
+}
+
+.red {
+    color: red;
+}

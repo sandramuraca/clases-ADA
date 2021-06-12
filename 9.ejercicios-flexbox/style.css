@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(230, 238, 238);
+    width: 100vw;
+    height: 100vh;
+
+}
+.texto-centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header{
+    background-color: #f4c8fc;
+    width: 100vw;
+    height: 15vh;
+}
+#panel-central{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    width: 100vw;
+}
+#panel-izquierdo{
+    width: 30vw;
+    background-color: #d69ff8;
+}
+#panel-derecho{
+    width: 70vw;
+}
+#footer{
+    background-color: darkorchid;
+    height: 15vh;
+    width: 100vw;
+
+}

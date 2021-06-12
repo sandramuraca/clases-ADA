@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Ejercicio 7 clase 32
+
+        function valor_contenido(valor1, valor2, valor3) {
+        if (valor1 < valor2) {
+          // valor1: 5  -  valor2: 20
+          // Comparo el tercero con el primero
+          if (valor1 < valor3) {
+            // valor1: 5  -  valor3: 15
+            if (valor3 < valor2) {
+              // Valor3: 15 - valor2: 20
+              // Si el tercero se encuentra entonces retorná 1
+              return 1;
+            } else {
+              return 0;
+            }
+          } else {
+            return 0;
+          }
+        } else {
+          // Si el segundo valor es menor al primero retorná -1
+          return -1;
+        }
+      }
+
+      //////////////// otra opcion
+
+      function valor_contenido(valor1, valor2, valor3){
+        if (menor_que(valor1, valor2) == 1) {
+          // valor1: 5  -  valor2: 20
+          // Comparo el tercero con el primero
+          if (valor1 < valor3) {
+            // valor1: 5  -  valor3: 15
+            if (valor3 < valor2) {
+              // Valor3: 15 - valor2: 20
+              // Si el tercero se encuentra entonces retorná 1
+              return 1;
+            } else {
+              return 0;
+            }
+          } else {
+            return 0;
+          }
+        } else {
+          // Si el segundo valor es menor al primero retorná -1
+          return -1;
+        }
+      }
+
+      function menor_que(numero1, numero2) {
+        if (numero1 < numero2) {
+          return 1;
+        } else {
+          return -1;
+        }
+      }
+
+      console.log(valor_contenido(20, 5, 1));
+
+
+    </script>
+</body>
+</html>

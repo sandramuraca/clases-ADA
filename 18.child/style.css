@@ -1,0 +1,47 @@
+li:first-child{
+    color: red;
+}
+
+li:last-child{
+    color: yellow;
+}
+
+p:first-child{
+    color: green;
+}
+
+/*odd es impar*/
+li:nth-child(odd){
+    background-color: lightblue;
+}
+/*even es par*/
+li:nth-child(even){
+    background-color: pink;
+}
+
+li:nth-child(3){
+    color: white;
+}
+
+/*cada 2 hace lo que le digas*/
+li:nth-child(2n){
+    font-size: 25px;
+}
+
+.ciudades div:nth-of-type(1){
+    color: blue;
+}
+
+.ciudades div:first-of-type{
+    color: magenta;
+}
+
+.ciudades span:last-of-type{
+    color: mediumspringgreen;
+}
+
+/* :only-child marca al unico de su clase dentro de 
+un bloque - un div o un ul*/
+
+
+

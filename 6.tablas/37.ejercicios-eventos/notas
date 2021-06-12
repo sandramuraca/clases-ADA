@@ -1,0 +1,32 @@
+teoria de la clase:
+https://github.com/matiasbenary/cajeroAda/tree/main/viernes05_02
+
+
+DOC = es el html, el documento (document objet model)
+podemos seleccionar elementos para hacer cambios e interactuar
+
+Podemos elegir pot TAG , ID , CLASS
+
+http://127.0.0.1:5500/ejercicio_clases/index.html
+
+ejercicio ejercicio_clases/*Hacer un programa que mediante el prompt me imprima un titulo y me permita ingresar 3 clases por separado y luego aplicarlas
+las clases puede ser(o agregar las que quieras):
+.texto-grande{font-size:64px;}
+.texto-chico{font-size:12px;}
+.texto-rojo{color:red;}
+.texto-azul{color:blue;}
+.texto-centrado{text-align: center;}
+.fondo-gris{background-color:#222;}*/
+
+paso a paso del ejercicio:
+1. Permitir que el usuario ingrese la informacion
+A. Guardar el titulo con un prompt
+B. Guardar la primera clase con un prompt
+C. Guardar la segunda clase con un prompt
+D. Guardar la tercer clase con un prompt
+2. Obtener elemento del dom
+A. Guardar en un const el elemento h1,document.getElementById o document.querySelector
+3. Cambiar el texto del usuario
+A. Cambiar texto del usuario con textContent
+4. Agregar las clases que el usuario ingreso
+A. Para cambiar el valor de las clases utilizo ClassList o ClassName
