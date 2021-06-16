@@ -1,0 +1,67 @@
+.contenedor{
+    background-color: #cacaca;
+    display: flex;
+}
+.rojo1{
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+    background-color: red;
+}
+
+.rojo{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.amarillo{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+/*Rotate tambien se indica como valor deg - grados- 
+si se coloca el nro negativo el elemento gira en sentido
+antihorario
+si se coloca positivo en sentido horario*/
+.rojo:hover{
+   transform: rotate(20deg); 
+}
+
+.amarillo:hover{
+    transform: rotate(0deg); 
+}
+
+/*transform en elemento cuando hago hover en el contenedor*/
+.contenedor2{
+    background-color: #cacaca;
+    display: flex;
+    padding: 20px;
+}
+
+.rojo2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.amarillo2{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.contenedor2:hover .rojo2{
+    border-radius: 50%;
+}
+
+.contenedor2:hover .amarillo2{
+    transform: rotate(45deg);
+}
