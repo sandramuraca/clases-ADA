@@ -1,0 +1,18 @@
+/*
+ BUENAS PRACTICAS:
+
+-Dar a las clases nombres descriptivos en cuanto a
+    su funcionalidad, no a su color por ejemplo
+
+- Se pueden unas nombres largo
+- Como convencion en html y css se escribe en
+        kebab-case: separamos las palabras con guion
+
+- Dar nombre a los elementos segun su antecesor y su contenido
+
+- ver sistema BEM: bloque elemento modificado:
+principal__tarjeta--zapatilla
+
+-no usar ñ ni tildes
+
+*/
