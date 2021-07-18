@@ -43,7 +43,7 @@ console.log(usuario.charAt(2));
 console.log(usuario.charAt(3));
 console.log(usuario.charAt(4));
 
-//SLICE--> toma un string y lo corta emoezando por la posicion que 
+//SLICE--> toma un string y lo corta empezando por la posicion que 
 //se le indique y termina en la posicion que se le indique
 
 const dato = "eliana";
