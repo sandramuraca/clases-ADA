@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="">Nombre</label>
+    <input type="text" name="" id="input-nombre">
+    
+    <h3>Validacion de contraseña y repeticion</h3>
+    <div>
+        <label for="">ingrese contraseña</label>
+        <input type="password" name="" id="contrasenia">
+        <br>
+        <label for="">ingrese confirmacion contraseña</label>
+        <input type="password" name="" id="confirmar-contrasenia">
+        <br>
+        <span id="error"></span>
+        <img src="" alt="">
+
+
+    </div>  
+
+    <h3>Validacion en vivo</h3>
+    <p>La contraseña NO debe incluir el nombre del usuario</p>
+    <div>
+
+    <label for="">Ingrese su nombre</label>
+        <input type="text" name="" id="nombre-input">
+        <br>
+        <label for="">ingrese contraseña</label>
+        <input type="password" name="" id="contrasenia-input">
+        <span id="mensaje"></span>
+    </div>
+
+    <h3>Formulario</h3>
+    <form id="formulario" action="">
+        <label for="">Edad
+            <input type="number" name="edad" id="edad">
+        </label>
+
+        <label for="">Provincia
+            <select name="provincia" id="provincia">
+                <option value="ba">Buenos Aires</option>
+                <option value="cba">cordona</option>
+                <option value="mdz">Mendoza</option>
+            </select>
+        </label>
+
+        <label for="">Indique los animales que le gustan
+            <input type="checkbox" name="animal" id="perro">Perro
+            <input type="checkbox" name="animal" id="gato">Gato
+            <input type="checkbox" name="animal" id="conejo">Conejo
+        </label>
+
+        <label for="">Escriba 5 sueños incumplidos
+            <textarea name="" id="suenios" cols="30" rows="10"></textarea>
+        </label>
+
+        <label for="">Elija su color Favorito
+            <input type="color" name="" id="color">
+        </label>
+
+        <label for="">Del 1 al 10 cuanto le gustan los Gatos
+            <input type="range" name="" id="amor-conejos" min="0" max="100">
+        </label>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+
+        <h3>Ejemplo para generador meme</h3>
+        <label>Escribi un texto
+            <input type="text" id="texto">
+        </label>
+        
+        <label>Elegi un color
+            <input type="color" id="color">
+        </label>
+        
+        <label>Copia la URL de una imagen
+            <input type="text" id="imagen">
+        </label>
+        
+        <div id="resultado">
+            <p id="resultado-texto">Aqui se vera reflejado lo que escriba</p>
+            <img src="" id="resultado-imagen">
+        </div>
+        
+
+    </form>
+
+   <script src="./app.js"></script>
+</body>
+</html>

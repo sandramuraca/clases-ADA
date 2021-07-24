@@ -1,0 +1,25 @@
+.oscuro{
+  background: #04428e;
+  color:#fefde4;
+}
+
+.card {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 30px;
+  width: 350px;
+}
+  
+  
+.modal {
+  width: 500px;
+  height: 300px;
+  border: 3px solid black;
+  padding: 40px;
+  position: absolute;
+  top: 40px;
+  left: 500px;
+  display: none;
+}
+  
+  
