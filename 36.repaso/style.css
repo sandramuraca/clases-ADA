@@ -1,0 +1,64 @@
+.mostrar-menu-mobile{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: lightskyblue;
+}
+
+.mobile-nav{
+    background-color: lightskyblue;
+}
+
+nav li{
+    margin: 10px;
+    list-style: none;
+}
+
+
+/*ACORDEON ESTILOS*/
+.acordeon-contenedor{
+    background-color: lightskyblue;
+    border: darkcyan solid 1px;
+    width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.acordeon-contenedor button{
+    background-color: transparent;
+    border: none;
+}
+
+.acordeon{
+height: 100px;
+transition: 0.5s;
+}
+
+/*display no es una propiedad animable, no se le puede aplicar transition, por eso se usa esta opcion*/
+.ocultar{
+    height: 0;
+    overflow: hidden;
+    border: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .nav{
+        display: none;
+    }
+
+    .mostrar-menu-mobile{
+        display: block;
+    }
+}
+
+/*
+Ejemplos pasados por Male:
+https://codepen.io/malerey/pen/zYwRYvq
+https://codepen.io/malerey/pen/wvdyvKQ
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+
+*/

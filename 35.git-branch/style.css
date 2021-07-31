@@ -1,3 +1,15 @@
 .rojo{
     color: red;
 }
+
+.principal {
+    background-color: #ccc;
+    height: 600px;
+    padding: 60px;
+}
+
+.contenedor-imagen{
+    background-color: red;
+    height: 400px;
+    width: 400px;
+}
