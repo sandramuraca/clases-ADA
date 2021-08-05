@@ -1,7 +1,7 @@
 //FUNCIONES NATIVAS o METODOS PARA STRINGS
 
 //number()
-//Syring()
+//String()
 //Boolean()
 
 /*Propiedades de strings
@@ -15,7 +15,7 @@ let nuevoNombre = "Victoria";
 
 console.log(nombre.length);//muestra la longitud del nombre
 
-const longitudDNombre = nombre.length;
+const longitudDNombre = nombre.length; //en esta variable guardo la longitud de la variable a la que le estoy aplicando .legth
 
 //Capitalizaciones en Mayusculas y minusculas:
 console.log(nombre.toUpperCase());
