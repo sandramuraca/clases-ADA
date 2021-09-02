@@ -1,4 +1,12 @@
-///Matriz - arrays bidimensionales
+////RESUMEN:
+
+//     *MATRIZ ARRAY BIDIMENSIONALES
+//     *Ciclo For con la matriz
+//     *For dentro de un For
+
+
+
+//Matriz - arrays bidimensionales
 // arrays dentro de un array, sepados por comas (,) - detro de cada array hay elementos
 
 const matriz =[
@@ -7,6 +15,8 @@ const matriz =[
     [11, 6, 6, 5]//edad mascota - posicion 2
 ]
 
+console.log(matriz)
+
 /*
 El array multidimensional de respresenta como una tabla
 primer fila - array posicion 0
@@ -14,7 +24,7 @@ segunda fila - array posicion 1
 tercera fila - array posicion 2
  */
 
-//como llamo a Kare? posicion del array dentro de la matriz, posicion del elemento dentro del array
+//como llamo a Karen? posicion del array dentro de la matriz, posicion del elemento dentro del array
 console.log(matriz[0][0])
 
 //clico for con la Matriz
