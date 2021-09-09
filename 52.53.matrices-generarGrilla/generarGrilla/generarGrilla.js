@@ -9,6 +9,11 @@
 //como genero una grilla con x cantidad de columnas?
 
 
+//--ELEMENTOS DEL DOM---
+//const grilla = document.querySelector(".grilla")
+
+
+//-----FUNCIONES AUXILIARES----
 //---FUNCION PARA GENERAR NUMEROS AL AZAR---como devuelvo emojis (numeros) al azar? --> en ese caso los emojis son numeros, que a su vez son las posiciones del array
 //esta funcion la voy a reutilizar como funcion auxiliar
 
@@ -75,3 +80,32 @@ console.log(generarGrilla(2, 3, [1, 2]))
 //   ['c', 'a', 'a'], 
 //   
 // ]
+
+//---PASAR LA GRILLA AL HTML---
+//Tengo que tomar la grilla del la funcion generarGrilla y convertirlo a string para llevarlo al HTML con inner.HTML
+
+const grillaJS = generarGrilla(3, 3, [arrayGatos])
+console.log(grillaJS)
+
+
+
+const convertirAString = (matriz) =>{
+    let resultado = []
+
+    for (let i = 0; i < matriz.length; i++) {
+       for (let j = 0; j < matriz.length; j++) {
+         
+           resultado.push(`<div class="item"></div>`)
+       }
+        
+    }
+   return resultado.join("") 
+    
+}
+
+const grillaEnHtml = convertirAString(grillaJS)
+
+grillaJS.innerHtml = grillaEnHtml
+
+//---DIFICULTAD DEL JUEGO---
+
