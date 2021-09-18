@@ -6,6 +6,7 @@
 //           *Math.round()
 //           *Nro al azar dentro de un rango
 //           *match 3 - grilla de emojis random / Mumuki Matrices 4           Generar Grilla  --> en archivo 
+//           *Join
 
 
 
@@ -39,7 +40,6 @@ const numeroRandom3 = Math.floor(Math.random()*3)
 console.log(numeroRandom3)
 
 
-
 //funcion auxiliar
 const obtenerNumeroAlAzar = () =>{
     numeroAlAzar = Math.floor(Math.random()*10)
@@ -71,3 +71,12 @@ const numeroAlAzarLargo = obtenerNumeroAlAzar3(arrayLargo)
 
 console.log(numeroAlAzarCorto)
 console.log(numeroAlAzarLargo)
+
+//metodo Join
+//El método join() une todos los elementos de una matriz (o un objeto similar a una matriz) en una cadena y devuelve esta cadena
+
+const elementos = ["fuego", "agua", "aire"]
+console.log(elementos.join())
+console.log(elementos.join(""))
+console.log(elementos.join("-"))
+console.log(elementos.join(" "))

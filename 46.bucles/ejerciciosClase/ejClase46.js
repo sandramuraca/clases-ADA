@@ -62,7 +62,3 @@ console.log(ultimos3)
 const ultimos4 = ultimosDos(moana)
 console.log(ultimos4)*/
 
-// 5. Hacer una función "conservarSoloConA" que reciba un array y retorne un nuevo array compuesto solo por los elementos del original que contienen la letra "A". 
-// (pista: vas a necesitar ademas un metodo de strings)
-
-const conservarSoloConA = (array) => {}
