@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <!-- HERO -->
+    <header class="hero is-primary">
+        <div class="hero-body">
+            <h1 class="title is-1">Este es el Header de la web</h1>
+        </div>
+    </header>
+
+    <h2 class="title is-2-desktop">Grilla</h2>
+    <p>Para crear una grilla hay que generar un div contenedor con la clase "columns" y divs con la clase "column" dentro.</p>
+    <p>Este diseño es responsivo</p>
+
+    <!-- GRILLAS -->
+    <h2 class="subtitle">Grilla sin indicar cantidad de columnas que ocupa cada elemento</h2>
+    
+    <div class="columns">
+        <div class="column">
+            <p class="notification is-primary">Hola. soy un párrafo</p>
+        </div>
+
+        <div class="column">
+            <p class="notification is-primary">Hola. soy un párrafo</p>
+        </div>
+
+        <div class="column">
+            <p class="notification is-primary">Hola. soy un párrafo</p>
+        </div>
+
+        <div class="column">
+            <p class="notification is-primary">Hola. soy un párrafo</p>
+        </div>
+
+    </div>
+
+    <h2 class="subtitle">Grilla indicando la cantidad de columnas que ocupa cada elemento</h2>
+    
+    <div class="columns">
+        <div class="column is-1">
+            <p class="notification is-primary">Hola. soy un párrafo, ocupo 1 columna</p>
+        </div>
+
+        <div class="column is-2">
+            <p class="notification is-primary">Hola. soy un párrafo, ocupo 2 columnas</p>
+        </div>
+
+        <div class="column is-6">
+            <p class="notification is-primary">Hola. soy un párrafo, ocupo 6 columnas</p>
+        </div>
+
+        <div class="column is-4">
+            <p class="notification is-primary">Hola. soy un párrafo, ocupo 4 columnas</p>
+        </div>
+
+    </div>
+
+    <h2 class="subtitle">Grilla que no ocupan las 12 columnas</h2>
+    
+    <div class="columns">
+        <div class="column is-1">
+            <p class="notification is-warning">Hola. soy un párrafo, ocupo 1 columna</p>
+        </div>
+
+        <div class="column is-2">
+            <p class="notification is-warning">Hola. soy un párrafo. ocupo 2 columnas</p>
+        </div>
+
+        <div class="column is-3">
+            <p class="notification is-warning">Hola. soy un párrafo, ocupo 3 columnas</p>
+        </div>
+
+        <div class="column is-3">
+            <p class="notification is-warning">Hola. soy un párrafo, ocupo 3 columnas</p>
+        </div>
+
+    </div>
+
+    <h2 class="subtitle">Columnas centrada con clase offset</h2>
+    
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <p class="notification is-link">Hola. soy un párrafo, ocupo 6 columnas y estoy centrado con la clase offset</p>
+        </div>
+
+    </div>
+
+    <h2 class="subtitle">Grilla sin indicar cantidad de columnas que ocupa cada elemento</h2>
+    
+    <div class="columns">
+        <div class="column is-narrow">
+            <p class="notification is-danger">Hola. Soy un div con la clase is-narrow</p>
+        </div>
+
+        <div class="column">
+            <p class="notification is-danger">Hola. soy un párrafo y ocupo el resto del espacio</p>
+        </div>
+
+    </div>
+    
+    <h2 class="subtitle">Grilla  contenedor con clase is-multiline</h2>
+    <div class="columns is-multiline">
+        <div class="column is-3">
+            <p class="notification is-primary">Hola. soy un párrafo</p>
+        </div>
+
+        <div class="column is-3">
+            <p class="notification is-primary">Hola. soy un párrafo</p>
+        </div>
+
+        <div class="column is-3">
+            <p class="notification is-primary">Hola. soy un párrafo</p>
+        </div>
+
+        <div class="column is-3">
+            <p class="notification is-primary">Hola. soy un párrafo</p>
+        </div>
+
+        <div class="column is-3">
+            <p class="notification is-primary">Hola. soy un párrafo</p>
+        </div>
+
+    </div>
+
+    <!-- SECCIONES -->
+    <h2 class="subtitle">Secciones</h2>
+    <p>Se palica color de fondo al body, no a la sección, por que asi se alinea sin ser percibido</p>
+    
+    <div class="container">
+
+        <section class="section">
+            hola soy una seccion 
+        </section>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
