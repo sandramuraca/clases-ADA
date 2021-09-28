@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Bulma - formularios</title>
+</head>
+<body>
+    
+    <!-- fomrularios -->
+    <!-- no soporta todos los tipos de input -->
+    <!-- Rango y color no tiene como estilarlos -->
+    <!-- accesibilidad basica: outline, label conectado con el for, aria label -->
+
+    <h1 class="title is-2">Formularios en Bulma</h1>
+
+    <div class="container">
+        <div class="section">
+            <div class="columns">
+                <div class="column is-5 has-background-grey"></div>
+                <div class="column is-3 has-background-warning">
+                    <form>
+                        <div class="field">
+                            <label class="label">Input Number</label> 
+                                <div class="control">
+                                    <input class="input my-1" type="number">
+                                </div>
+                                <p class="help">Inserte números</p>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Input Text</label>
+                                <div class="control">
+                                    <input class="input my-1" type="text"> 
+                                </div>
+                                <p class="help">Inserte texto</p>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Input email</label> 
+                                <div class="control">
+                                    <input class="input my-1" type="email"> 
+                                </div>
+                                <p class="help">Ingrese su email</p>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Input date</label> 
+                                <div class="control">
+                                    <input class="input my-1" type="date"> 
+                                </div>
+                                <p class="help">Ingrese fecha</p>
+                        </div>
+
+                                     
+                        <div class="field">
+                            <label class="label">Select - Options</label> 
+                                <div class="control">
+                                    <div class="select is is-fullwidth">
+                                        <select class="select">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p class="help">Seleccione 1, 2, 3</p>
+                        </div>                    
+                        
+                        <div class="field">
+                            <label class="label" for="textarea">text area</label>
+                            <div class="control">
+                                <textarea class="textarea"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="field">
+                            <label class="label" for="edad">Esto es un label</label>
+                            <div class="control">
+                              <input class="checkbox"  id="edad" type="checkbox"> Checkbox
+                            </div>
+                            <p class="help is-hidden">De 9 a 99 años</p>
+                        </div>
+                        
+                    </form>  
+                </div>
+                                    
+                </div>
+
+            </div>
+        </div> 
+    </div>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
