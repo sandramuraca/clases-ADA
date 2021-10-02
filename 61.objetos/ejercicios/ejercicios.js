@@ -125,4 +125,4 @@ console.log(mostrarTecnologias(user))
 
 
 // VER EL RESTO DE LOS EJERCICIOS
-//https://github.com/malerey/Objetos/blob/master/README.md
+//https://github.com/malerey/Objetos

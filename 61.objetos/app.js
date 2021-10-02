@@ -39,7 +39,7 @@ console.log(persona.nombre.toUpperCase())
 //acceder a un elemento dentro de un array que esta dentro de un objeto
 console.log(persona.tecnologiasQueConoce[0])
 
-//agregar una propiedad al array
+//agregar una propiedad al objeto
 persona.anioDeNacimiento = 1994
 persona.signoZodiaco = "libra"
 
@@ -47,3 +47,18 @@ console.log(persona)
 
 //acceder a una propiedad dentro de un objeto, dentro del objeto
 console.log(persona.ubicacionGeografica.pais)
+
+//si quiero cuequear que un objeto tiene propiedades se usa el operador in
+const seniora = {
+    id: 0,
+    edad: 25,
+    nombre: "sandra",
+    telefono: 123456 
+}
+//la pripiedad que quiero chequear se coloca como un string
+console.log("id" in seniora)
+
+//si quiero borrar una propiedad utilizo delete
+delete seniora.telefono
+console.log(seniora)
+
