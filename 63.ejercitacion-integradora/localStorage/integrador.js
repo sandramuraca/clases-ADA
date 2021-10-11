@@ -111,8 +111,11 @@ buttonEnviarCambios.onclick = ()=>{
     const modificarContrasenia = (user, nuevaContrasenia) =>{
     user.contrasenia = nuevaContrasenia
     }
+
+    modificarNombreDeUsuario(usuarioDefault, inputNuevoUsuario.value)
+    modificarContrasenia(usuarioDefault, inputNuevoPass.value)  
 }
 
-modificarNombreDeUsuario(usuarioDefault, inputNuevoUsuario.value)
-modificarContrasenia(usuarioDefault, inputNuevoPass.value)
+
+
 
