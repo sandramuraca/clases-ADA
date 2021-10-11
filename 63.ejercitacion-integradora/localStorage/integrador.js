@@ -93,6 +93,8 @@ const usuarioLogeado = (usuario) =>{
 buttonEnviar.onclick= () =>{
     usuarioLogeado(usuarioDefault)
 }
+
+console.log(usuarioDefault)
    
 //Cambiar datos
 buttonCambiarDatos.onclick = () =>{
@@ -103,17 +105,20 @@ buttonCambiarDatos.onclick = () =>{
 }
 
 buttonEnviarCambios.onclick = ()=>{
-
     const modificarNombreDeUsuario = (user, nuevoNombre) =>{
-    user.nombreUsuario = nuevoNombre}
-
-    
+    user.nombreUsuario = nuevoNombre
+    return user       
+    }
     const modificarContrasenia = (user, nuevaContrasenia) =>{
     user.contrasenia = nuevaContrasenia
+    return user
     }
 
     modificarNombreDeUsuario(usuarioDefault, inputNuevoUsuario.value)
-    modificarContrasenia(usuarioDefault, inputNuevoPass.value)  
+    modificarContrasenia(usuarioDefault, inputNuevoPass.value) 
+    console.log(usuarioDefault)
+    
+    usuarioLogeado(usuarioDefault)
 }
 
 
