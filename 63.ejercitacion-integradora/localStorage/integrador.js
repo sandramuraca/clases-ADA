@@ -56,6 +56,7 @@ const inputPass = document.querySelector("#contrasenia")
 const formulario = document.querySelector("#formulario")
 const buttonCambiarDatos = document.querySelector("#cambiar-datos")
 const buttonCerrarSesion = document.querySelector("#cerrar-sesion")
+const botonCambioDatosYCierre = document.querySelector(".sesion-iniciada")
 
 const formularioCambioDatos = document.querySelector("#formulario-cambio-datos")
 const inputNuevoUsuario = document.querySelector("#nuevo-usuario")
@@ -116,11 +117,31 @@ buttonEnviarCambios.onclick = ()=>{
 
     modificarNombreDeUsuario(usuarioDefault, inputNuevoUsuario.value)
     modificarContrasenia(usuarioDefault, inputNuevoPass.value) 
+    
     console.log(usuarioDefault)
     
-    usuarioLogeado(usuarioDefault)
+    const nuevoUsuarioLogeado = (usuario) =>{
+        if(inputNuevoUsuario.value === usuario.nombreUsuario &&
+            inputNuevoPass.value === usuario.contrasenia) {
+             saludar(usuario)
+             buttonInicio.classList.add("ocultar")
+             formularioCambioDatos.classList.add("ocultar")
+             buttonCambiarDatos.classList.remove("ocultar")
+             buttonCerrarSesion.classList.remove("ocultar")
+             sesionIniciada = true
+         }else {
+             alert("usuario o contraseña erroneos")
+         }
+ }
+    nuevoUsuarioLogeado(usuarioDefault)
 }
 
-
+//cerrar sesion
+buttonCerrarSesion.onclick = () =>{
+    sesionIniciada = false
+    titulo.textContent = "Hola!"
+    botonCambioDatosYCierre.classList.add("ocultar")
+    buttonInicio.classList.remove("ocultar")
+}
 
 
