@@ -93,39 +93,5 @@ console.log(leerDesdeLocalStorage("UsuariosClave"))
 
 
 
-//*****SEGUNDA PARTE EJERCICIO****/
 
 
-
-const buttonInicio = document.querySelector("#iniciar-sesion")
-const buttonEnviar = document.querySelector("#enviar")
-const inputUsuario = document.querySelector("#usuario")
-const inputPass = document.querySelector("#contrasenia")
-const formulario = document.querySelector("#formulario")
-const buttonCambiarDatos = document.querySelector("#cambiar-datos")
-const buttonCerrarSesion = document.querySelector("#cerrar-sesion")
-
-buttonInicio.onclick = () => {
-    formulario.classList.remove("ocultar")
-}
-
-const usuario5 = {
-    nombreUsuario: "Carlos",
-    contrasenia: "123456"
-}
-
-const comprobarDatos = (usuario) =>{
-    console.log(inputUsuario.value)
-    console.log(inputPass.value)
-    if(inputUsuario.value === usuario.nombreUsuario &&
-        inputPass.value === usuario.constrasenia){
-            saludar(usuario)
-            buttonInicio.classList.add("ocultar")
-            buttonCambiarDatos.classList.remove("ocultar")
-            buttonCerrarSesion.classList.remove("ocultar")
-        }
-}
-
-buttonEnviar.onclick= () =>{
-    comprobarDatos(usuario5)
-}

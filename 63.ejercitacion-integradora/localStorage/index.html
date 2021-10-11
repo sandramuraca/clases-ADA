@@ -9,10 +9,13 @@
 </head>
 <body>
     
-    <h1 id="titulo" >hola</h1>
+    <!-- saludo -->
+    <h1 id="titulo" >Hola</h1>
 
+    <!-- boton iniciar sesion -->
     <button id="iniciar-sesion">Iniciar Sesión</button>
 
+    <!-- formulario inicio sesion -->
     <form id="formulario" class="ocultar">
         <label for=""> Usuario:
             <input type="text" name="" id="usuario">
@@ -30,10 +33,31 @@
         
     </form>
 
-    <button id="cambiar-datos" class="ocultar">Cambiar mis datos</button>
-    <button id="cerrar-sesion" class="ocultar">Cerrar Sesión</button>
+    <!-- botones cambio de datos / cierre sesion -->
+    <div class="sesion-iniciada" >
+        <button id="cambiar-datos" class="ocultar">Cambiar mis datos</button>
+        <button id="cerrar-sesion" class="ocultar">Cerrar Sesión</button>
+    </div>
 
+    <!-- formulario cambio de datos -->
+    <form id="formulario-cambio-datos" class="ocultar">
+        <label for=""> Usuario:
+            <input type="text" name="" id="nuevo-usuario">
+        </label>
+        
+        <br>
 
-    <script src="./app.js"></script>
+        <label for=""> Contraseña
+            <input type="password" name="" id="nueva-contrasenia">
+        </label>
+
+        <br>
+        
+        <button id="enviar-cambios" type="button">Enviar</button>
+        
+    </form>
+
+    <!-- <script src="./app.js"></script> -->
+    <script src="./integrador.js"></script>
 </body>
 </html>
