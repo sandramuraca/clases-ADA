@@ -48,7 +48,7 @@ console.log(persona)
 //acceder a una propiedad dentro de un objeto, dentro del objeto
 console.log(persona.ubicacionGeografica.pais)
 
-//si quiero cuequear que un objeto tiene propiedades se usa el operador in
+//si quiero chequear que un objeto tiene propiedades se usa el operador in
 const seniora = {
     id: 0,
     edad: 25,
