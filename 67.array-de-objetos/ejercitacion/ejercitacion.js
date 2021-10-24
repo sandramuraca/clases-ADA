@@ -69,15 +69,12 @@ console.log(operaciones)
 //6) Recorre con un map operaciones y guarda el array resultante con el nombre copiaOperaciones. El nuevo array sera exactamente igual al anterior, pero en lugar de tener el monto como un numero, lo tendra como un string. (Pista: despues de hacer el ejercicio 6, chequea con un console log que operaciones siga teniendo sus propiedades monto como numero. Si no es asi, recorda usar el spread operator!)
 
 //*****VER*** */
-const copiaSegura = [...operaciones]
-const copiaOperaciones = copiaSegura.map((dato) =>{
-    
- 
-     const montoAString = String(dato.monto);
-     console.log(typeof(montoAString))
-  return copiaSegura;
-})
 
+const copiaOperaciones = operaciones.map((elemento) =>{
+  let copiaSegura = {...elemento}      
+  return String(copiaSegura.monto)
+})
+console.log(operaciones)
 console.log(copiaOperaciones)
   
 
@@ -91,14 +88,22 @@ console.log(filtroOperaciones)
   
 //8)Recorre con un filter operaciones y guarda el array resultante con el nombre ganancias. El array nuevo debera tener solo aquellas operaciones cuyo tipo sea "Ganancia" en lugar de "Gastos".
 
-//*******VER***** */
 
-// const ganancias = operaciones.filter((elemento)=>{
-//     return elemento.tipo === 'Ganancia'
-// })
+const ganancias = operaciones.filter((elemento)=>{
+    return elemento.tipo === 'Ganancia'
+})
 
-// console.log(ganancias)
+console.log(ganancias)
   
 //9)Recorre con un map operaciones y guarda en una nueva variable totalGastos la suma de todos los montos de los objetos cuyo tipo sea "gasto" (Pista: vas a necesitar una acumuladora)*/
+let acc = 0;
+const totalGastos = operaciones.map((elemento, index, array) =>{
+    if(elemento.tipo === "Gasto"){
+        acc += elemento.monto;
+    }
+    return acc
+});
+console.log(acc);
+console.log(totalGastos);
 
-//*******VER***** */
+
