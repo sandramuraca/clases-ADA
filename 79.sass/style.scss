@@ -1,0 +1,53 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+// $color-texto: purple;
+// $tipografia-principal: Montserrat;
+
+// //@mixin: puede recibir parametros
+// @mixin tarjeta ($color:pink) {
+//     font-family: $tipografia-principal;
+//     width: 500px;
+//     height: 300px;
+//     background-color: #cacaca;
+//     font-size: 20px;
+//     color: $color-texto;
+// }
+
+// .instrucciones{
+//   @include tarjeta();
+//   @extend %flex-centrar;
+// }
+
+// .otra-tarjeta{
+//     @include tarjeta();
+// }
+
+// .otra-cosa{
+//     @include tarjeta();
+    
+// }
+
+// //@extend: no recibe parametros
+// %flex-centrar{
+//     display:flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+
+//si en el parametro le paso un valor ese va a ser el valor por defecto
+@mixin tarjeta ($ancho: 200px, $color: pink ){
+    width: $ancho;
+    height: 200px;
+    background-color: $color;
+   
+}
+
+.tarjeta-promociones{
+    @include tarjeta();
+    background-color: powderblue;
+}
+
+.tarjeta-producto{
+    @include tarjeta(300px);
+}

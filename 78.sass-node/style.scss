@@ -1,0 +1,65 @@
+//las variables se declaran con un $ adelante
+
+$color-principal: #4144e6;
+$color-segundario: rgb(207, 151, 151);
+$tipografia-principal: "Helvetica";
+$tipografia-segundaria: "Currier";
+
+.titulo{
+    color:$color-principal;
+    font-family: $tipografia-segundaria;
+}
+
+.tarjeta{
+    color: $color-segundario;
+}
+
+
+@mixin flex-centrar($direccion: row, $content: center) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $content;
+    align-items: center;
+  }
+  
+  .tarjeta {
+    @include flex-centrar($direccion: column, $content: flex-start);
+    background-color: $color-secundario;
+    width: 100px;
+    height: 100px;
+    font-family: $tipografia-principal;
+    box-shadow: $sombra;
+  }
+  
+  .seccion-principal {
+    @include flex-centrar();
+    background-color: $color-principal;
+    .tarjeta {
+      @include flex-centrar();
+      background-color: $color-tarjeta-adentro;
+      .link-navegacion {
+        @include flex-centrar();
+        color: pink;
+      }
+    }
+  }
+//se puede anidar para acceder a un elemmento a traves de indicar hijo de quien es para, se usa para hacer estilados especificos
+
+/*@mixin--> son las funciones de sass
+
+@mixi nombre-funcion {
+    bloque de codigo que quiero que se ejecute
+}
+
+puede recibir parametros con un nombre y valor por defecto
+ese parametro se indica cuando se declara el mixin, cual va a ser por defecto
+cuando ejecutas ese mixin se puede cambiar el valor que se indicao por defecto
+
+
+lo puedo llamar desde elemento seleccionados
+.tarjeta{
+    color: $color-segundario;
+    @include nombre-funcion
+}
+
+*/

@@ -1,0 +1,28 @@
+.titulo {
+  color: #4144e6;
+  font-family: "Currier";
+}
+
+.tarjeta {
+  color: #cf9797;
+}
+
+/*@mixin--> son las funciones de sass
+
+@mixi nombre-funcion {
+    bloque de codigo que quiero que se ejecute
+}
+
+puede recibir parametros con un nombre y valor por defecto
+ese parametro se indica cuando se declara el mixin, cual va a ser por defecto
+cuando ejecutas ese mixin se puede cambiar el valor que se indicao por defecto
+
+
+lo puedo llamar desde elemento seleccionados
+.tarjeta{
+    color: $color-segundario;
+    @include nombre-funcion
+}
+
+*/
+/*# sourceMappingURL=style.css.map */
