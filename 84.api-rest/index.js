@@ -7,6 +7,7 @@ const emailUsuario = document.querySelector("#email-usuario")
 const direccionUsuario = document.querySelector("#direccion-usuario")
 const telefonoUsuario = document.querySelector("#telefono-usuario")
 const crearUsuario = document.querySelector("#crear-usuario")
+const botonVolver = document.querySelector("#boton-volver")
 
 const getApi= () =>{
   fetch("https://601da02bbe5f340017a19d60.mockapi.io/users")
@@ -75,6 +76,12 @@ fetch("https://601da02bbe5f340017a19d60.mockapi.io/users", {
 }
 
 crearUsuario.onclick = () =>{
+  contenedorFormulario.classList.toggle("ocultar")
+  tabla.classList.toggle("ocultar")
+  botonNuevoUsuario.disabled = false
+}
+
+botonVolver.onclick = () =>{
   contenedorFormulario.classList.toggle("ocultar")
   tabla.classList.toggle("ocultar")
   botonNuevoUsuario.disabled = false
