@@ -46,7 +46,8 @@ const crearTablaHTML = (data) => {
 botonNuevoUsuario.onclick = () =>{
   contenedorFormulario.classList.toggle("ocultar")
   tabla.classList.toggle("ocultar")
-}
+  botonNuevoUsuario.disabled = true
+ }
 
 formCrearUsuario.onsubmit = (e) => {
 e.preventDefault()
