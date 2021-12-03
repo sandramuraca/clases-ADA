@@ -77,4 +77,5 @@ fetch("https://601da02bbe5f340017a19d60.mockapi.io/users", {
 crearUsuario.onclick = () =>{
   contenedorFormulario.classList.toggle("ocultar")
   tabla.classList.toggle("ocultar")
+  botonNuevoUsuario.disabled = false
 }
