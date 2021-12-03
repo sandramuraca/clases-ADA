@@ -1,10 +1,22 @@
+const tabla = document.querySelector("#tabla")
+const botonNuevoUsuario = document.querySelector("#boton-nuevo-usuario")
+const contenedorFormulario= document.querySelector("#contenedor-formulario")
+const formCrearUsuario= document.querySelector("#form-crear-usuario")
+const nombreUsuario = document.querySelector("#nombre-usuario")
+const emailUsuario = document.querySelector("#email-usuario")
+const direccionUsuario = document.querySelector("#direccion-usuario")
+const telefonoUsuario = document.querySelector("#telefono-usuario")
+const crearUsuario = document.querySelector("#crear-usuario")
 
-
-fetch("https://601da02bbe5f340017a19d60.mockapi.io/users")
+const getApi= () =>{
+  fetch("https://601da02bbe5f340017a19d60.mockapi.io/users")
 .then((res) =>  res.json())
 .then((data) => {
  crearTablaHTML(data)
 })
+}
+
+getApi()
 
 const crearTablaHTML = (data) => {
   const tabla = document.querySelector("#tabla")
@@ -31,11 +43,10 @@ const crearTablaHTML = (data) => {
     tabla.innerHTML = html
 }
 
-const formCrearUsuario= document.querySelector("#form-crear-usuario")
-const nombreUsuario = document.querySelector("#nombre-usuario")
-const emailUsuario = document.querySelector("#email-usuario")
-const direccionUsuario = document.querySelector("#direccion-usuario")
-const telefonoUsuario = document.querySelector("#telefono-usuario")
+botonNuevoUsuario.onclick = () =>{
+  contenedorFormulario.classList.toggle("ocultar")
+  tabla.classList.toggle("ocultar")
+}
 
 formCrearUsuario.onsubmit = (e) => {
 e.preventDefault()
@@ -55,9 +66,14 @@ fetch("https://601da02bbe5f340017a19d60.mockapi.io/users", {
     "Content-Type": "application/json"
   }
 })
-.then((res) => res.json())
-.then((data) => {
-    console.log (data)
-})
+  .then((res) => res.json())
+  .then((data) => {
+  console.log (data)
+  getApi()  
+  })
 }
 
+crearUsuario.onclick = () =>{
+  contenedorFormulario.classList.toggle("ocultar")
+  tabla.classList.toggle("ocultar")
+}

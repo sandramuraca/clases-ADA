@@ -1,6 +1,29 @@
-/* body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+body{
+    background-color: lightyellow;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+.titulo{
+    text-align: center; 
+}
+
+.contenedor-titulo-boton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boton-nuevo-usuario{
     background-color: #cacaca;
-} */
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    box-shadow: 15px 17px 16px -6px rgba(130,115,115,0.75);
+}
 
 th{
     background-color: #fafafa;
@@ -24,3 +47,29 @@ tr:nth-child(even) {
     border-bottom: 1px solid black;
 }
 /*odd - even : impar - par*/
+
+.ocultar{
+    display: none;
+} 
+
+
+.formulario-nuevo-usuario{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+
+input{
+    margin-bottom: 20px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid #cacaca;
+    box-shadow: 10px 10px 12px -6px rgba(176,162,162,0.75);
+}
+
+#crear-usuario{
+    width: 20%;
+    margin: auto;
+}
