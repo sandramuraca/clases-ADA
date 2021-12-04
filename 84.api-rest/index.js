@@ -86,9 +86,9 @@ const crearTablaHTML = (data) => {
       <td>${curr.email}</td>
       <td>${curr.address}</td>
       <td>${curr.phone}</td>
-      <td><button class= "boton-editar" data-id="${curr.id}"><i class="fas fa-pencil-alt"></i>
+      <td><button style="color: lightseagreen;" class= "boton-editar" data-id="${curr.id}"><i class="fas fa-pencil-alt"></i>
       </button></td>
-      <td><button class= "boton-borrar" data-id="${curr.id}"><i class="fas fa-trash-alt"></i>
+      <td><button style="color: rgb(245, 85, 49);"  class= "boton-borrar" data-id="${curr.id}"><i class="fas fa-trash-alt"></i>
       </button></td>
     </tr>
     `
