@@ -1,3 +1,4 @@
+/*******Elementos del Dom**********/
 const tabla = document.querySelector("#tabla")
 const botonNuevoUsuario = document.querySelector("#boton-nuevo-usuario")
 const contenedorFormulario= document.querySelector("#contenedor-formulario")
@@ -9,7 +10,31 @@ const telefonoUsuario = document.querySelector("#telefono-usuario")
 const crearUsuario = document.querySelector("#crear-usuario")
 const botonVolver = document.querySelector("#boton-volver")
 
-const getApi= () =>{
+/*******funciones auxiliares**********/
+const crearBotonesBorrar = () =>{
+  const botonesBorrar = document.querySelectorAll(".boton-borrar");
+
+  for (let i = 0; i < botonesBorrar.length; i++) {
+      botonesBorrar[i].onclick = () =>{
+          const idUsuarioABorrar = botonesBorrar[i].dataset.id;
+          borrarUsuario(idUsuarioABorrar);
+      }
+  }
+}
+
+const borrarUsuario = (id) =>{
+  fetch(`https://601da02bbe5f340017a19d60.mockapi.io/users/${id}`, {
+      method: "DELETE",
+  })
+  .then((res) => res.json())
+  .then((data) =>{
+  recuperarDatosApi();
+  })
+}
+
+
+/*******Get para traer datos de mi Api**********/
+const recuperarDatosApi= () =>{
   fetch("https://601da02bbe5f340017a19d60.mockapi.io/users")
 .then((res) =>  res.json())
 .then((data) => {
@@ -17,8 +42,9 @@ const getApi= () =>{
 })
 }
 
-getApi()
+recuperarDatosApi()
 
+/*******Crear tabla con los datos de la Api**********/
 const crearTablaHTML = (data) => {
   const tabla = document.querySelector("#tabla")
   const html = data.reduce((acc, curr) => {
@@ -28,7 +54,10 @@ const crearTablaHTML = (data) => {
       <td>${curr.email}</td>
       <td>${curr.address}</td>
       <td>${curr.phone}</td>
-      <td><button id="${curr.id}">Editar usuario</button></td>
+      <td><button data-id="${curr.id}"><i class="fas fa-pencil-alt"></i>
+      </button></td>
+      <td><button class= "boton-borrar" data-id="${curr.id}"><i class="fas fa-trash-alt"></i>
+      </button></td>
     </tr>
     `
   }, `
@@ -42,28 +71,35 @@ const crearTablaHTML = (data) => {
     `)
 
     tabla.innerHTML = html
+    crearBotonesBorrar() //funcion para seleccionar los botones
 }
 
+/*******Boton para abrir el formulario para crear nuevo usuario**********/
 botonNuevoUsuario.onclick = () =>{
   contenedorFormulario.classList.toggle("ocultar")
   tabla.classList.toggle("ocultar")
   botonNuevoUsuario.disabled = true
  }
 
+
+
+
+/*******Post a la Api paracrear agregar nuevo usuario**********/
 formCrearUsuario.onsubmit = (e) => {
 e.preventDefault()
-console.log(nombreUsuario.value)
+
+const nuevoUsuario = {
+  fullname: nombreUsuario.value,
+  email:emailUsuario.value,
+  address:direccionUsuario.value,
+  phone:telefonoUsuario.value,
+}
 
 fetch("https://601da02bbe5f340017a19d60.mockapi.io/users", {
   method: "POST", 
-  // la api me va a decir lo que tengo que mandar en el body
-  body: JSON.stringify({
-    fullname: nombreUsuario.value,
-    email:emailUsuario.value,
-    address:direccionUsuario.value,
-    phone:telefonoUsuario.value,
-  }), 
-  // la api me va a decir lo que tengo que mandar en los headers
+  
+  body: JSON.stringify(nuevoUsuario), 
+
   headers: {
     "Content-Type": "application/json"
   }
@@ -71,10 +107,11 @@ fetch("https://601da02bbe5f340017a19d60.mockapi.io/users", {
   .then((res) => res.json())
   .then((data) => {
   console.log (data)
-  getApi()  
+  recuperarDatosApi()  //traigo de nuevo los datos de la Api actualizados
   })
 }
 
+/*******Evento boton crear usuario**********/
 crearUsuario.onclick = () =>{
   contenedorFormulario.classList.toggle("ocultar")
   tabla.classList.toggle("ocultar")
@@ -86,3 +123,6 @@ botonVolver.onclick = () =>{
   tabla.classList.toggle("ocultar")
   botonNuevoUsuario.disabled = false
 }
+
+
+
