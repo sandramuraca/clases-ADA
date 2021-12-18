@@ -15,20 +15,22 @@ Seguí el código de la clase anterior para guiarte.*/
 //Seleccion elemtos del Dom y Variables
 const UrlBase = "https://www.breakingbadapi.com/api/"
 const endPointCharacters = "https://breakingbadapi.com/api/characters"
+
 const cardPersonajes = document.querySelector("#card-personajes")
 
-
+//Get endpoint personajes
 const traerInfoPersonajes= () =>{
   fetch(endPointCharacters)
   .then((res) =>  res.json())
   .then((data) => {
-   crearTarjeta(data)
+    crearTarjeta(data)
   })
 }
 
 traerInfoPersonajes()
 
 
+//crear tarjetas en html de los personajes
 const crearTarjeta = (data) =>{
 
     const mostrarEnHtml = data.reduce ((acc, elemento) =>{
@@ -54,3 +56,26 @@ traerInfoPersonajes()
         <p id="ocupacion-personaje">Ocupación: ${elemento.occupation}</p>
         <p id="status-personaje">Status: ${elemento.status}</p>
 */
+
+// campo de busqueda 
+
+const formBusqueda = document.querySelector("#form-busqueda")
+const inputBusqueda = document.querySelector("#input-busqueda")
+
+const busquedaPersonajes = (busqueda) => {
+ 
+   fetch(`https://breakingbadapi.com/api/characters?name=${busqueda}`)
+  .then((res) =>  res.json())
+  .then((data) => {
+   crearTarjeta(data)
+   console.log(data)
+    })
+}
+
+formBusqueda.onsubmit = (e) => {
+    e.preventdefault();
+    busquedaPersonajes(inputBusqueda.value)
+   
+}
+console.log(inputBusqueda.value)
+console.log(inputBusqueda)

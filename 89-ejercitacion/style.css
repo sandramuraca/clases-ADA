@@ -24,6 +24,8 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 15px;
   border: 1px solid black;
   border-radius: 10px;
+  color: #00FF00;
+  font-family: "Helvetica";
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,7 +35,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .contenedor-imagen {
   width: 180px;
-  border: solid red 3px;
   display: flex;
   flex-direction: row;
   justify-content: center;
