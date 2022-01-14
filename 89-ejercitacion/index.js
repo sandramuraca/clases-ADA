@@ -72,10 +72,11 @@ const busquedaPersonajes = (busqueda) => {
     })
 }
 
-formBusqueda.onsubmit = (e) => {
-    e.preventdefault();
-    busquedaPersonajes(inputBusqueda.value)
-   
-}
 console.log(inputBusqueda.value)
 console.log(inputBusqueda)
+
+formBusqueda.onsubmit = (e) => {
+    e.preventDefault()
+    busquedaPersonajes(inputBusqueda.value)
+}
+

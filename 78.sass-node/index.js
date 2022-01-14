@@ -1,7 +1,7 @@
 //npm - colleccion de codigo en JS
 
 /* como configurar sass PASO A PASO:
-PARA INTALAR SASS TENGO QUE TENER INSTALADO PAQUETE JSON
+PARA INSTALAR SASS TENGO QUE TENER INSTALADO PAQUETE JSON
 
 1) pasos npm init:
 cuando emite el mensaje, hace preguntas, te propone un monbre para el archivo (entrer, enter)
@@ -15,10 +15,11 @@ cuando emite el mensaje, hace preguntas, te propone un monbre para el archivo (e
 
 3) crear archivo style.scss
 correr comando --> sass style.scss style.css
+- si no funcniona correr npm i -g sass
 
-- se crea el arcribo style.scss
+- se crea el archibo style.scss
 
-cada vez que se crea un cambio en el archivo de sass hay que complilarlo con el comando:
+cada vez que se crea un cambio en el archivo de sass hay que compilarlo con el comando:
 sass style.scss style.css
 */
 
