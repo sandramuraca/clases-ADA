@@ -19,6 +19,9 @@ correr comando --> sass style.scss style.css
 
 - se crea el archibo style.scss
 
+4)sass style.scss style.css
+este comando te crea el archivo css y css map
+
 cada vez que se crea un cambio en el archivo de sass hay que compilarlo con el comando:
 sass style.scss style.css
 */
