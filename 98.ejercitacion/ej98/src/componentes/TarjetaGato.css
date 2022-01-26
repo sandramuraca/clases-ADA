@@ -1,0 +1,14 @@
+.tarjeta-gato{
+    border: solid 1px black;
+    width: 300px;
+    height: auto;
+}
+
+.contenedor-img-gato{
+    width: 280px;
+    height: 280px;
+}
+
+.img-gato{
+    height: 100%;
+}
