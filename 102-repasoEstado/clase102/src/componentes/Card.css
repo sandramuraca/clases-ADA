@@ -1,0 +1,15 @@
+.card{
+    width: 170px;
+    height: 180px;
+    background-color: lightcyan;
+    padding: 10px;
+    border-radius: 10px;
+    border: lightskyblue 1px solid;
+    margin: 10px;
+}
+
+.container-tarjetas{
+    display: flex;
+    justify-content: center;
+    
+}
