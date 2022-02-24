@@ -1,19 +1,33 @@
 import { Box } from '@mui/material';
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 import { useState, useEffect } from 'react';
+import SearchIcon from '@mui/icons-material/Search';
 
-const Busqueda = () =>{
+//onClick={handleClick}
+
+const Busqueda = ({ escritoInput, clickBoton }
+    ) =>{
        
 
     return(
         <Box>
-            <TextField sx={{
-                        width: 400,
-                        }}
-                        id="outlined-name"
-                        label="Ingresa el nombre del personaje"
-                        //onChange={handleChange}
-                    />
+            <TextField
+        sx={{ width: 400 }}
+        id="standard-basic"
+        label="Search your character"
+        variant="standard"
+        onChange={escritoInput}
+      />
+      <Button
+        margin="normal"
+        variant="outline"
+        endIcon={<SearchIcon />}
+        onClick={clickBoton}
+      >
+        Buscar
+      </Button>
+
         </Box>
         
     )
